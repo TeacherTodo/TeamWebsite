@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    color: rgb(0, 51, 102);
+    line-height: 1.5;
+  }
+  
+  .content-width {
+    max-width: 70ch;
+    width: calc(100% - 4rem);
+    margin: 0 auto;
+  }
+  
+  main {
+    margin-bottom: 4rem;
+  }
+  
+  header {
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+    background-color: rgb(241, 179, 0);
+    border-bottom: 4px solid rgb(0, 51, 102);
+    color: rgb(0, 51, 102);
+  }
+  
+  header p {
+    color: rgb(0, 51, 102);
+  }
+  
+  h1, h2, h3, h4{
+    margin: 0;
+    line-height: 1.25;
+  }
+  
+  h2, h3, h4 {
+    color: rgb(0, 51, 102);
+  }
+
+button {
+    background-color: rgb(0, 51, 102);
+    border: none;
+    color:rgb(241, 179, 0);
+    padding: 15px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+  }
