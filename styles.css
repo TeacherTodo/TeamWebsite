@@ -5,9 +5,10 @@ body {
   }
   
   .content-width {
-    max-width: 70ch;
+    max-width: 100ch;
     width: calc(100% - 4rem);
     margin: 0 auto;
+    align-self: right;
   }
   
   main {
@@ -44,4 +45,7 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
+    width: 125px;
   }
+
+
