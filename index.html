@@ -70,8 +70,8 @@
         
         <!-- Tab content -->
         <div id="Overview" class="tabcontent">
-          <h3>Project Desciption</h3>
-          <h5>Problem Statement</h5>
+          <justify>
+          <center><h3>Problem Statement</h3></center>
           <p>Our team is working to create a viable product to help manage a student-teacher transition process. 
           It will reduce the amount of time it takes to get students enrolled in teaching jobs outside of college 
           and streamline the application process for faculty. </p>
@@ -81,23 +81,25 @@
           teacher in an Excel spreadsheet. College of Education staff spend well over 200 hours each semester on this 
           process that could be used to provide other services to students. </p>
           
-          <p>Our goal is to make this process automated, 
-          so that no data will need manual input, and students can upload their own data for review by faculty members 
-          at their earliest convienence. Simultaneously, faculty will also be able to see student progress, and be able 
-          to identify exactly where they are in their current projection plan.</p>
+          <center><h3>General Solution</h3></center>
 
-          
+          <p>Our goal is to make this process automated, so that no data will need manual input, and students can upload 
+          their own data for review by faculty members at their earliest convienence. Simultaneously, faculty will also 
+          be able to see student progress, and be able to identify exactly where they are in their current projection 
+          plan. An approximated idea of what this would look like is shown below.</p>
 
-          <p>This project stemmed from our sponsor, Chris Aungst, in the form of this Capstone Project Proposal</p>
-          
-          <p><iframe src="Documents/Capstone Proposal.pdf" width="100%" height="500px"></iframe></p>
-        
+          <h1 align="center"><img src="StudentLandingPage.jpg" alt="Trial Student Landing Page" width="800" height="400"></h1>
+
+          <p>This project stemmed from our sponsor, Chris Aungst, in the form of this 
+            <a href="Documents/Capstone Proposal.pdf" target="_blank">Capstone Project Proposal</a></strong></p>
+        </justify>
         </div>
 
         <div id="Team" class="tabcontent">
+          <center>
           <h3>Team</h3>
-          <p><u>Our team consists of 5 members and our client:</u></p>
-
+          <p>Our team consists of 4 members and our client:</p>
+          
           <img src="Headshots/Sam.jpg" alt="Sam Gerstner" width="100" height="100" style="vertical-align:middle">
           <p><strong><a href="Documents/Sam_resume.pdf" target="_blank">Sam Gerstner</a></strong> - Team Lead </p>
           <img src="Headshots/Alexander.jpg" alt="Alexander Frenette" width="100" height="100" style="vertical-align:middle">
@@ -108,78 +110,199 @@
           <p><strong><a href="Documents/Shlok_resume.pdf" target="_blank">Shlok Sheth</a></strong> - Full Stack Developer</p>
           <img src="Headshots/Chris.jpg" alt="Chris Aungst" width="100" height="100" style="vertical-align:middle">
           <p><strong>Chris Aungst</strong> - Director of Professional Education Program and Project Client</p>
+          </center>
         </div>
 
         <div id="Requirements" class="tabcontent">
-          <h3>Requirements</h3>
-          <p>Our requirements include a streamlined experiance with any students 
-            or faculty who are involved in the process, safe and efficent manangment of 
-            data, and of course maintained privacy for students who decide to pursue this 
-            course of action. We believe that we can accomplish these requirements by starting 
+          
+          <center><h3>Requirements</h3></center>
+          <p>Our requirements include: </p> 
+          <p>- A streamlined experience for any students or faculty who are involved in the process. </p>
+          <p>- Safe and efficent manangment of data. </p>
+          <p>- Maintained privacy for students and faculty throughout our system. </p>
+          <p>We have accomplished these requirements by starting 
             with the data manangment systems and moving up to the user interface from there, 
             allowing all of the data to be securly transferred to and from the students or 
-            faculty that would be using this system. Creating a backend based system allows 
+            faculty that would be using this system. Creating a backend-based system allows 
             for more changes to be implemented if the requirements for certain courses need 
-            to be added, removed or altered. It would also allow for more of a streamlined 
-            experiance through differing programs having a direct connection to their backend 
+            to be added, removed or altered. It also allows for more of a streamlined 
+            experience through differing programs having a direct connection to their backend 
             counterparts</p>
+            
         </div>
 
         <div id="Solution" class="tabcontent">
-          <h3>Ideal Solution</h3>
-          <p>Our ideal solution is a web app that will act as a single source of truth for 
-            all student information. Storing school records along with auxiliary documents.
-            This information will be pulled from existing school records APIs, and student 
-            and admin accounts and authentication will be provided through the school 
-            authentication system. This would also allow for the ability to send documents 
-            for signatures electronically rather than physically.
+          <justify>
+          <center><h3>Project Solution</h3></center>
+          <p>Our current solution is a web application that allows the College of Education
+            to track and manage student requirements. This application acts as a single 
+            source of truth for a student's progression in the Student Teacher Intern Certificate
+            (STIC) program. The web app has two views:
           </p>
-          <h3>Non-Ideal Solution</h3>
-          <p>If we do not have access to existing school infrastructure, we still have options.
-            The system will continue to offer the same functionality, but will require 
-            additional human input. Student records will have to be imported by a college employee 
-            and site admin. It will then be parsed by the system to generate student accounts, 
-            and accompanying data.
+          <center><h3>Student Dashboard</h3></center>
+          <p>The student dashboard is the page that students will be brought to when they log in to
+            the application. It will display their tasks in a list format, and each task will have a 
+            due date as well as a task status, either being Incomplete, In Progress, or Completed. 
+            A student will be able to access each of their tasks, attach documents to certain tasks,
+            and then submit those documents for administrator review. 
           </p>
-          <p>Reguardless of how we are able to accomplish this goal, we will be using an HTML5-based 
-            front-end User Interface. The final design of this UI is not set, but below is an example 
-            of a very basic student view.</p>
-            <h1 align="center"><img src="StudentLandingPage.jpg" alt="Trial Student Landing Page" width="600" height="400"></h1>
+          <h1 align="center"><img src="Student.png" alt="Student View"></h1>
+          <center><h3>Administrator Dashboard</h3></center>
+          <p>The administrator dashboard is more complex than the student dashboard. This dashboard 
+            displays all students currently enrolled in the STIC program, as well as all of their tasks, 
+            task statuses, and any documents that those tasks may need. Of course, this can become 
+            overwhelming very quickly, so the administrator dashboard also includes a filtering system 
+            to help administrators be able to narrow down particular students, whether it be by name or 
+            based on their task status. The administrator dashboard also includes a navigation bar at the 
+            top of the page. In this navigation bar, administrators are able to add new majors, requirements, 
+            and even new administrators to the STIC program, as well as review any majors, requirements, 
+            documents, or administrators currently implemented in the program. Finally, the program allows 
+            for student data to be imported or exported using FileMaker Pro or an Excel spreadsheet, 
+            which allows for flawless integration with the current system in use by the College of Education.
+          </p>
+            <h1 align="center"><img src="Dashboard.png" alt="Administrator View"></h1>
+          </justify>
         </div>
 
 
         <div id="Technologies" class="tabcontent">
-          <h3>Technologies</h3>
-          <p>We are using Java to code the basic backend functions, allowing us to sort and 
-            notify the correct users when data is uploaded or updated to a database. We also 
-            plan to use OpenAPI for the data modeling and API models. Lastly we are planning 
-            to use SprintBoot to generate webpages for users to be able to access or edit their 
-            data, as a kind of popup UI for the time being.</p>
-
+          <justify>
+            <div style="text-align:center;">
+              <img src="technologies.png" alt="bubble chart of technologies used">
+            </div>
+          <center><h3>Front End</h3></center>
+          <h4>HTML-5</h4>
+          <p>We used HTML-5 to create and format our two dashboards (Showcased on the 
+            Solution tab), both in the trial stages of the project and in the final project itself. 
+            We also used HTML-5 to create this website, which helps to elaborate more on the project
+            and its different aspects. 
+          </p>
+          <h4>Bootstrap</h4>
+          <p>As a formatting tool, CSS files can really only do so much. We implemented Bootstrap 
+            as a more formal and set way to ensure our front end dashboards looked uniform and 
+            smooth for the project. It also gave us more tools to implement in the dashboards, such 
+            as the expanding accordian tabs that display the tasks for both students and administrators.
+          </p>
+          <h4>Thymeleaf</h4>
+          <p>The implementation of Thymeleaf was used as a way to correctly and quickly draw from 
+            Java files and store those variables in the HTML pages, while still maintaining the 
+            structure of an HTML webpage. This was used as a way to help implement a connection 
+            between the back end Java code and the front end HTML code. 
+          </p>
+          <h4>JavaScript</h4>
+          <p>As many developers know, JavaScript is neccesary to many different parts of any front 
+            end programs. It handles the movements and operations of the buttons, tabs, accordians, 
+            and many other small things that allow the front end pages to work successfully. While 
+            its involvment with the project was minimal, it still adds a lot to our webpage. 
+          </p>
+          <center><h3>Back End</h3></center>
+          <h4>Java</h4>
+          <p>Our project's main backend is coded in Java. It is set up and shared between all of 
+            the different technologies that we are using. Java is also a language that our team is 
+            familiar with, so we have chosen to use that in order to make sure all of us are able 
+            to contribute to and understand the project.
+          </p>
+          <h4>SpringBoot</h4>
+          <p>Our team used SpringBoot to be able to have webpage generation for the project. 
+            We also used it to store our data endpoints and have a launching point for the web app.
+            Spring works as the overall connecting portion of our product, working to connect the 
+            web app to the backend database. 
+          </p>
+          <h4>MySQL</h4>
+          <p>We used MySQL to store the data that the web app would need to be able to draw from 
+            for both dashboards. The student dashboard uses it to draw in one student's data, using 
+            the user ID to find the records of the student's tasks and major. The administrator 
+            dashboard uses it to be able to seperate the students, drawing in all of the information 
+            and using it to seperate out student tasks by students. 
+          </p>
+          <h4>Amazon S3</h4>
+          <p>Our team chose S3 because we have already had experience with Amazon Web Services in 
+            the past. Amazon S3 is used as our document storage, so it can store whatever documents 
+            we need and assign it to a specific task ID to be able to be referenced by our web app 
+            later. This means that we don't have to take up space by assigning the document to a 
+            location in a MySQL document. 
+          </p>
+          <center><h3>Project Manangment</h3></center>
+          <h4>GitHub</h4>
+          <p>We decided on using GitHub very early on in the project. It was the easiest way to 
+            manage our project and organize it based on the amount of code we would be writing 
+            asynchronously. We have our project on GitHub, seperated out into many repositories 
+            to keep everything organized and keep it from interacting with each other.
+          </p>
+          <h4>IntelliJ</h4>
+          <p> We found IntelliJ to be the best suited to our project, as it is able to run our 
+            project's two servers at the same time. It is also able to connect straight to GitHub, 
+            which reduced the need to have multiple tabs open at the same time. Overall, it has been our 
+            main IDE for our group for the duration of this project. 
+          </p>
+          <h4>Microsoft Office</h4>
+          <p> Microsoft Office is where all of our deliverables are stored. The online version 
+            allows for asynchronous work on documents, and we have all worked with the Office Suite 
+            before. It is also secure and not as finicky as Google Drive or GitHub, both of which 
+            we attempted to use before we switched over to Microsoft Office.
+          </p>
+          <h4>Discord</h4>
+          <p> We use Discord as our main form of communication. It allows us to tag certain team 
+            members as well as communicate through text and calls in one space. It is also been our 
+            way of keeping track of due dates in one location, as we use it to schedule when we 
+            complete items by and when certain parts of the project need to be finished by. 
+          </p>
             
-            <p>We do plan to deploy a cloud infastructure using SQL for the database and implementing 
-            an S3-like Solution as large format data storage for files, but right now we are 
-            focusing on the basics of the backend solution.</p>
-            
-            <p>Our schedule is shown in the Gantt Chart below, and we plan to begin full scale development in eary January.</p>
-
-            <h1 align="center"><img src="Gantt_Chart.png" alt="Gantt Chart" width="600" height="400"></h1>
           
-
+          <center><h3>Gantt Chart</h3></center>
+          <p>Our schedule is shown in the Gantt Chart below.</p>  
+          
+          <h1 align="center"><img src="Gantt-Chart.png" alt="Gantt Chart" width="900" height="400"></h1>
+          
+          </justify>
         </div>
 
         <div id="Deliverables" class="tabcontent">
           <h3>Deliverables</h3>
           <p>We upload deliverables weekly, and will be making updated changes throughout the 2022 - 2023 
-            school year. To view our past and current deliverables, please visit our Github at 
-            <a href="https://github.com/TeacherTodo">github.com/TeacherTodo</a> </p>
-          <p>If you would like to see our current demos, you may see the current iterations of the 
+            school year.</p>
+          <p>If you would like to see our early demos, you may see the Alpha iterations of the 
             <a href="Student-Landing-Page.html">Student Landing Page</a> and the <a href="Admin-Landing-Page.html">Administrator Landing Page</a>.</p>
-          <h3>Requirements Document:</h3>
+            <h3>Team Inventory Document:</h3>
+            <p><iframe src="Documents/Team Inventory.pdf" width="100%" height="500px"></iframe></p>
+            <p>Our Team Inventory Document reviews each member of our team, as well as showing the 
+              current job title and past experience with technology.
+            </p>
+            <h3>Team Standards Document:</h3>
+            <p><iframe src="Documents/Team Standards.pdf" width="100%" height="500px"></iframe></p>
+            <p> Our Team Standards documents how our group functions, and what our team does in 
+              certain situations. 
+            </p>
+            <h3>Requirements Document:</h3>
           <p><iframe src="Documents/Requirements.pdf" width="100%" height="500px"></iframe></p>
+          <p>Our team Requirements Document reviews the requirements for our project and how we 
+            plan to tackle them. 
+          </p>
           <h3>Feasibility Document:</h3>
           <p><iframe src="Documents/Feasibility.pdf" width="100%" height="500px"></iframe></p>
-          <a href="https://youtu.be/Y4ZxzZQd1LY">Design Review</a>
+          <p>Our team Feasibility Document reviews the project's feasibility and what technologies 
+            we can use to accomplish the project's goal. 
+          </p>
+          <h3>Mini-Intro:</h3>
+          <p><iframe src="Documents/Mini Intro.pdf" width="100%" height="500px"></iframe></p>
+          <p>Our Mini Intro is a condensed version of our project proposal, brushing over some of 
+            the more technical topics to talk about the project as a whole.
+          </p>
+          <h3>Software Design Document:</h3>
+          <p><iframe src="Documents/Software Design Document.pdf" width="100%" height="500px"></iframe></p>
+          <p>Our Software Design Document reviews how we are going to set up our project, and how 
+            we plan to ensure it's success through its design and different types of software.
+          </p>
+          <h3>Alpha Demo Flight Plan:</h3>
+          <p><iframe src="Documents/Alpha Demo Flight Plan.pdf" width="100%" height="500px"></iframe></p>
+          <p>The Alpha Demo Flight Plan reviews what our software at the base level is capable of, 
+            and reviews those capabilities step by step.</p>
+          <h3>UGRADS Presentation:</h3>
+          <p><iframe src="Documents/UGRADS Presentation.pdf" width="100%" height="500px"></iframe></p>
+          <p>The UGRADS Presentation is a final in-depth look at our project, with a walkthrough of 
+            different items that are involved in the product's everyday functionality.
+          </p>
+          </p>
         </div>
 
       </p>
